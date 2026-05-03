@@ -3,31 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>科学的成分解析メディア</title>
+    <title>科学的成分解析メディア | スキンケアの最適解</title>
     <style>
         body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 0; }
-        header { background-color: #0056b3; color: white; padding: 20px; text-align: center; }
-        .container { max-width: 800px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; }
-        h1 { font-size: 24px; margin-bottom: 10px; }
-        h2 { font-size: 20px; color: #0056b3; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; }
-        .card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin-top: 20px; }
-        a { text-decoration: none; color: inherit; }
-        .tag { background-color: #e2e8f0; color: #4a5568; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+        header { background-color: #0056b3; color: white; padding: 30px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 28px; letter-spacing: 1px; }
+        header p { margin: 10px 0 0; font-size: 14px; opacity: 0.9; }
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        h2 { font-size: 22px; color: #0056b3; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 30px; }
+        
+        /* カードを綺麗に並べるグリッドレイアウト */
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        
+        .card { background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; height: 100%; box-sizing: border-box; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+        a { text-decoration: none; color: inherit; display: block; }
+        
+        /* タグの色分け */
+        .tag { padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: bold; display: inline-block; margin-bottom: 10px; }
+        .tag-acne { background-color: #e6f4ea; color: #1e8e3e; }
+        .tag-aging { background-color: #fce8e6; color: #d93025; }
+        .tag-barrier { background-color: #e8f0fe; color: #1a73e8; }
+        
+        h3 { font-size: 18px; margin: 0 0 10px 0; line-height: 1.4; }
+        .card p { font-size: 14px; color: #5f6368; line-height: 1.6; margin: 0; }
     </style>
 </head>
 <body>
     <header>
         <h1>科学的成分解析メディア</h1>
+        <p>エビデンスに基づくスキンケア成分の徹底比較</p>
     </header>
+    
     <div class="container">
-        <h2>最新の成分データ</h2>
-        <a href="#">
-            <div class="card">
-                <span class="tag">ニキビ・赤み</span>
-                <h3>アゼライン酸の科学的メカニズムと推奨濃度</h3>
-                <p>5αリダクターゼの阻害と抗菌作用による皮脂コントロール。市販D2Cコスメの比較データはこちら。</p>
-            </div>
-        </a>
+        <h2>最新の成分データ解析</h2>
+        
+        <div class="card-grid">
+            <!-- ニキビ・皮脂系 -->
+            <a href="azelaic.html">
+                <div class="card">
+                    <span class="tag tag-acne">ニキビ・皮脂・赤み</span>
+                    <h3>アゼライン酸</h3>
+                    <p>5αリダクターゼ阻害と抗菌作用による皮脂コントロール。市販D2Cコスメの濃度別比較データはこちら。</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card">
+                    <span class="tag tag-acne">毛穴・くすみ</span>
+                    <h3>ビタミンC / 誘導体</h3>
+                    <p>活性酸素の消去と皮脂分泌の抑制。ピュアビタミンCと各種誘導体（APPS等）の浸透率と刺激性の比較。</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card">
+                    <span class="tag tag-acne">角栓・黒ずみ</span>
+                    <h3>サリチル酸 (BHA)</h3>
+                    <p>脂溶性の酸による毛穴内部の皮脂溶解とピーリング作用。最適なpH値と濃度の選び方。</p>
+                </div>
+            </a>
+
+            <!-- エイジング系 -->
+            <a href="#">
+                <div class="card">
+                    <span class="tag tag-aging">シワ・ハリ・ターンオーバー</span>
+                    <h3>レチノール (ビタミンA)</h3>
+                    <p>線維芽細胞の活性化によるコラーゲン産生。A反応（皮むけ）を回避する濃度ステップアップ法。</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card">
+                    <span class="tag tag-aging">次世代エイジングケア</span>
+                    <h3>バクチオール</h3>
+                    <p>レチノール様作用を持ちながら光毒性・刺激がない植物由来成分。敏感肌向けアイテムの比較。</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card">
+                    <span class="tag tag-aging">シワ改善・美白</span>
+                    <h3>ナイアシンアミド</h3>
+                    <p>メラノソーム転送阻害とコラーゲン産生を両立。医薬部外品指定の高コスパD2Cコスメ一覧。</p>
+                </div>
+            </a>
+
+            <!-- バリア・鎮静系 -->
+            <a href="#">
+                <div class="card">
+                    <span class="tag tag-barrier">バリア機能・高保湿</span>
+                    <h3>ヒト型セラミド</h3>
+                    <p>角質細胞間脂質のラメラ構造修復。植物性との違いと、複数種配合（NP, AP等）の推奨アイテム。</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card">
+                    <span class="tag tag-barrier">組織修復・鎮静</span>
+                    <h3>パンテノール (プロビタミンB5)</h3>
+                    <p>肌内部での細胞賦活作用。レチノールやピーリング後の肌荒れ修復に特化したレスキューコスメ。</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card">
+                    <span class="tag tag-barrier">肝斑・抗炎症</span>
+                    <h3>トラネキサム酸</h3>
+                    <p>プラスミン生成抑制による抗炎症・抗メラニン作用。摩擦による赤みや色素沈着へのアプローチ。</p>
+                </div>
+            </a>
+        </div>
     </div>
 </body>
 </html>
